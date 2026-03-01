@@ -92,14 +92,14 @@ def insert_data(name,email,res_score,timestamp,no_of_pages,reco_field,cand_level
     cursor.execute(insert_record, rec_values)
     connection.commit()
 
-st.set_page_config(page_title='Resume Analyzer', 
+st.set_page_config(page_title='Skill Match AI', 
                    page_icon='Logo/resume_icon.jpg')
 
 def run():
     img = Image.open('Logo/resume_img.png')
     img.resize((250,250))
     st.image(img)
-    st.title('AI Resume Analyzer')
+    st.title('Skill Match AI')
     st.sidebar.markdown('# Choose User')
     activites = ['User', 'Admin']
     choice = st.sidebar.selectbox('Choose among the options:', activites)

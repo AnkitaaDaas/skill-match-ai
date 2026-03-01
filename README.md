@@ -1,83 +1,162 @@
 
-# 🔍 AI Resume Analyzer
+# 🚀 SkillMatch AI – Intelligent Resume Screening & Skill Gap Analyzer
 
-This project is an AI-powered resume analyzer that uses natural language processing and machine learning techniques to evaluate resumes and provide feedback to job applicants.
+ResumeIQ is an AI-powered Resume Screening System built using Natural Language Processing (NLP) and Machine Learning techniques to analyze resumes, calculate relevance scores, and identify skill gaps based on target job roles.
 
-
-
-
+This system helps candidates optimize resumes and helps recruiters screen applicants efficiently.
 
 
+## 📌 Project Overview
 
-## Screenshots
+This application parses resumes (PDF/DOCX), extracts structured information using NLP, and:
 
-![Screenshot1](https://github.com/bhaveshk22/AI-Resume-Analyzer/assets/141263853/01bacdb1-8138-48ed-a9fa-bc33a3e0311e)              
+- Computes a Resume Relevance Score  
+- Identifies missing skills  
+- Suggests skill improvements  
+- Recommends learning resources  
+- Stores applicant analytics in MySQL  
 
+Built using Streamlit, spaCy, NLTK, and MySQL.
 
-![Screenshot2](https://github.com/bhaveshk22/AI-Resume-Analyzer/assets/141263853/b5b38a05-9c95-41c5-b2b1-9a3a1a3a8f10)
+## 🧠 Core Features
 
-
-
-## Features
-
-- Evaluates the content of resumes for relevance to specific job positions
-- Provides personalized feedback and suggestions for improvements
-- Uses Streamlit for web application development
-- Uses NLP techniques to assess various sections of the resume, like skills, hobbies, and work experience and provide a *Resume Score*
-- Recommends related skills to add to the resume based on the job position
-- Recommends YouTube videos and online courses to learn and upgrade skills
-
-
-
-## Lessons Learned
-
-- PDF parsing can be complex and may require multiple libraries.
-- Connecting SQL and Python requires careful consideration of database schema and query design.
-- Extracting data from PDFs can be challenging and may require additional preprocessing steps
-- Recommending skills, videos, and lectures requires a deep understanding of the user's needs and interests.
+### 🔎 Resume Parsing & NLP Processing
+- Extracts:
+  - Skills
+  - Education
+  - Experience
+  - Contact Information
+- Uses spaCy (en_core_web_sm) for Named Entity Recognition
+- Uses NLTK for stopword removal and tokenization
 
 
-## Getting Started
+### 📊 Resume Scoring Engine
+- Calculates skill-match percentage
+- Assigns a Resume Score based on:
+  - Keyword relevance
+  - Technical skills match
+  - Content richness
+  - Experience indicators
 
-Clone the project
+### 🎯 Skill Gap Detection
+- Compares extracted skills with target job role
+- Identifies missing competencies
+- Suggests relevant skills to improve resume strength
+
+### 📚 Smart Learning Recommendations
+- Recommends:
+  - YouTube tutorials
+  - Online courses
+  - Skill upgrade resources
+
+### 📈 Admin Dashboard
+- Stores applicant data in MySQL database
+- Displays analytics using:
+  - Matplotlib
+  - Plotly visualizations
+
+## 🛠 Tech Stack
+
+### Frontend
+- Streamlit
+
+### Backend
+- Python
+
+### NLP & ML
+- spaCy  
+- NLTK  
+- pyresparser  
+
+### Database
+- MySQL  
+- PyMySQL  
+
+### Data Visualization
+- Matplotlib  
+- Plotly  
+
+
+## 🏗 System Architecture
+
+1. Resume Upload  
+2. Text Extraction (PDFMiner / Docx2txt)  
+3. NLP Preprocessing  
+4. Skill Extraction  
+5. Resume Scoring  
+6. Skill Recommendation  
+7. Database Storage  
+8. Admin Analytics Dashboard  
+
+## 🚀 How to Run Locally
 
 ```bash
-  git clone https://link-to-project
+git clone <your-repository-link>
+cd ResumeIQ
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+streamlit run app.py
 ```
 
-Go to the project directory
+## 💡 Enhancements Implemented
 
-```bash
-  cd my-project
-```
+- Integrated MySQL backend for persistent storage
+- Designed weighted resume scoring logic
+- Implemented skill-gap analysis module
+- Added recruiter analytics dashboard
+- Resolved dependency compatibility issues across NLP libraries
 
-Install dependencies
+## 📊 Future Improvements
 
-```bash
-  pip install -r requirements.txt
-```
+- Deploy on Streamlit Cloud / AWS
+- Add AI-based job role prediction
+- Implement cosine similarity scoring
+- Add ATS compatibility score
+- Integrate embeddings for semantic matching
 
-Start the server
+## 🎯 Key Learning Outcomes
 
-```bash
-  streamlit run App.py
-```
-
-
-## Authors
-
-- [@bhavesh](https://github.com/bhaveshk22)
+- End-to-end NLP pipeline development
+- Handling real-world PDF parsing challenges
+- Database integration with Python
+- Managing dependency conflicts in ML projects
+- Building production-ready Streamlit applications
 
 
-# Hi, I'm Bhavesh! 👋
+## 👩‍💻 About
+
+Computer Science student passionate about:
+
+- Artificial Intelligence  
+- Natural Language Processing  
+- Backend Development  
+- Real-world ML applications  
+
+
+## ⭐ Why This Project Stands Out
+
+Unlike basic resume parsers, this system:
+
+- Performs structured skill-gap analysis  
+- Generates resume improvement suggestions  
+- Stores applicant analytics  
+- Provides recruiter-level dashboard insights  
+
+# Authors
+
+- [@Ankita](https://github.com/AnkitaaDaas)
+
+
+# Hi, I'm Ankita! 👋
 
 
 ## 🚀 About Me
-I'm a Full Stack Data Scientist
+I'm a Full Stack Developer
 
 
 ## 🔗 Links
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bhavesh-kabdwal-6ba30a25b)
+[![linkedin](https://www.linkedin.com/in/ankitaad)]
 
 
 ## 🛠 Skills
@@ -89,11 +168,6 @@ I'm a Full Stack Data Scientist
 
 
 ## Summary of My Journey
-👩‍💻 I'm currently a student
+👩‍💻 I'm a 2025 graudaute
 
-🧠 Btech Computer Science
-
-💬 more details loading
-
-![Logo](https://github-readme-stats.vercel.app/api?username=bhaveshk22&&show_icons=true&title_color=ffffff&icon_color=bb2acf&text_color=daf7dc&bg_color=151515)
-
+🧠 Btech Computer Science, NIT Agartala

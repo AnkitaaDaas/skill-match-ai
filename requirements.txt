@@ -6,5 +6,5 @@ yt-dlp
 pymysql
 streamlit-tags
 Pillow
-spacy==2.3.5
+spacy==3.7.2
 nltk
